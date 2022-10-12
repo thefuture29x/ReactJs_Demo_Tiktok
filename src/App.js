@@ -1,5 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
+
+import { ThemeProvider } from "./ContextExample/ThemeContext";
+
 import Content from "./Content.js";
 import UseStateExample from "./ListJobs.js";
 import UseEffectExample01 from "./ShowButton.js";
@@ -11,12 +14,15 @@ import UserMemoExample from "./AddProduct.js";
 import UserReducerExample01 from "./UpAndDown.js";
 import UserReducerExample02 from "./ToDoApp.js";
 import UserReducerExample03 from "./Todo";
+import UserContextExample from "./ContextExample";
 
 function App() {
   return (
-    <div className="App">
-      <UserReducerExample03 />
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <UserContextExample />
+      </div>
+    </ThemeProvider>
   );
 }
 
