@@ -3,6 +3,8 @@ import "./App.css";
 
 import { ThemeProvider } from "./ContextExample/ThemeContext";
 
+import ContextAndUseReducerExmample from "./ContextAndUseReducer";
+
 import Content from "./Content.js";
 import UseStateExample from "./ListJobs.js";
 import UseEffectExample01 from "./ShowButton.js";
@@ -15,14 +17,13 @@ import UserReducerExample01 from "./UpAndDown.js";
 import UserReducerExample02 from "./ToDoApp.js";
 import UserReducerExample03 from "./Todo";
 import UserContextExample from "./ContextExample";
+import UseImperativeHandle from "./UseImperativeHandle";
 
 function App() {
   return (
-    <ThemeProvider>
-      <div className="App">
-        <UserContextExample />
-      </div>
-    </ThemeProvider>
+    <div className="App">
+      <UseImperativeHandle></UseImperativeHandle>
+    </div>
   );
 }
 
